@@ -25,11 +25,6 @@ p {
 }
 
 
-.links { 
-    margin-top: 50px ; 
-    margin-bottom: 0px ;  
-
-}
 
 
 strong { 
@@ -54,4 +49,32 @@ strong {
 .contact { 
     color: yellow ; 
     text-decoration: underline; 
+}
+
+
+.button { 
+    display: inline-block ;
+    background: #FFE600;
+    color: black ; 
+    padding: 20px ; 
+    padding-left: 25px ; 
+    padding-right: 25px ;  
+    padding-top: 15px ; 
+    padding-bottom: 15px ; 
+ 
+}
+
+.button:hover { 
+    background-color: blue ; 
+}
+
+a { 
+    text-decoration: none; 
+    font-weight: 600;
+}
+
+
+.links { 
+    padding-top: 15px ; 
+
 }
