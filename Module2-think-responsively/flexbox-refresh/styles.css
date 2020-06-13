@@ -2,7 +2,26 @@ body {
     font-size: 1.125rem ; 
     color: #707070 ; 
     margin: 0 ; 
+    background: pink ; 
 }
+
+
+@media (min-width:400px) and (max-width: 649px) { 
+    body { 
+        background: blue ; 
+    }
+}
+
+
+@media (min-width: 650px) { 
+    body { 
+        background: orange ; 
+    }
+}
+
+
+
+
 
 /* typography */ 
 
@@ -65,7 +84,6 @@ img {
 .col3 { 
     width: 70% ;
 }
-
 
 
 
