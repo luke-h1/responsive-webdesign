@@ -5,22 +5,19 @@ body {
     background: pink ; 
 }
 
-
+/* 
 @media (min-width:400px) and (max-width: 649px) { 
     body { 
         background: blue ; 
     }
 }
+*/ 
 
-
-@media (min-width: 650px) { 
+@media (min-width: 500px) and (orientation: landscape) { 
     body { 
         background: orange ; 
     }
 }
-
-
-
 
 
 /* typography */ 
@@ -55,13 +52,22 @@ p {
 
 
 .columns { 
-    display: flex ;
+    display: flex ; 
     justify-content: space-between;
     margin: 1em 0 ; 
+
+} 
+
+
+@media (max-width: 600px) { 
+    .columns { 
+        flex-direction: column;
+    }
 }
 
+
 img { 
-    max-width: 70% ;  
+    max-width: 100% ;  
 }
 
 .col-bg { 
@@ -85,5 +91,19 @@ img {
     width: 70% ;
 }
 
+@media (max-width: 600px) { 
+    .col-1, 
+    .col-2, 
+    .col-3 { 
+        width: 100% ; 
+    }
+}
 
 
+
+
+
+
+
+
+ 
