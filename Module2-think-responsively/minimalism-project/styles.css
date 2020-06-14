@@ -1,131 +1,229 @@
-/*  Fonts
-    -----
-    font-family: 'Lora', serif;
-    font-family: 'Ubuntu', sans-serif;
- */ 
-
-
-nav ul { 
-     list-style: none;
-     display: flex ; 
-     justify-content: center; 
-     padding: 0 ; 
+body {
+  margin: 0;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
 }
 
-
-nav a { 
-    text-decoration: none; 
-    color: #707070 ; 
-    font-weight: 700 ; 
-    padding: .25em ; 
+h1 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #143774;
+  font-size: 2rem;
 }
 
-
-nav li { 
-    margin-left: 2em ; 
+/* subtitle stuff */
+.subtitle {
+  font-weight: 700;
+  color: #1792d2;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin: 0;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
 }
 
-
-nav a:hover, 
-nav a:focus { 
-    color: #1792d2 ; 
-
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-
-body { 
-    margin: 0 ; 
-    font-weight: 400 ; 
-    font-family: 'Ubuntu', sans-serif;
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-
-h1 { 
-    font-family: 'Lora', serif ;
-    font-weight: 400; 
-    color: #143774 ; 
-    font-size: 2rem ; 
-
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.subtitle { 
-    font-weight: 700;
-    color: #1792d2 ; 
-    font-size: .75rem ; 
-    text-transform: uppercase;
-    margin: 0 ; 
-    
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-
-h2 { 
-
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
+/* main layout */
 
-h1,h2,strong { 
-
+header {
+  background: #f8f8f8;
+  padding: 2em 0;
 }
 
-
-a { 
-
+.homepage {
+  border-bottom: 1px solid #707070;
 }
 
-
-a:hover, a:focus { 
-
+.homepage:hover {
+  color: #707070;
 }
 
-
-header { 
-    background:#F8F8F8; 
-    padding: 2em 0 ; 
-} 
-
-
-
-.homepage { 
-    border-bottom: 1px solid #707070;
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-
-.homepage:hover { 
-    color: #707070 ; 
-} 
-
-
-.container { 
-    width: 90% ; 
-    max-width: 900px ; 
-    margin: 0 auto ; 
+.container-nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
-.container-nav { 
-    display: flex ;  
-    justify-content: space-around;
+/* Media queries */
+
+@media (max-width: 675px) {
+  .container-nav {
     flex-direction: column;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 0.5em 0em;
+  }
 }
- 
 
-@media (max-width: 675px) { 
-    .container-nav { 
-        flex-direction: column;
-    }
+/* navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
 
-    header { 
-        text-align: center; 
-    } 
+nav a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: 0.25em;
+}
+
+nav li {
+  margin-left: 2em;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: left;
+  justify-content: ;
+  margin: 1em 0;
+}
+
+.col1 {
+  width: 20%;
+}
+
+.col2 {
+  width: 45%;
+}
+
+.col3 {
+  width: 70%;
+}
+
+@media (max-width: 600px) {
+  .columns {
+    flex-direction: column;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.col-bg {
+  background-color: #212614;
+  padding: 1em;
+  color: #fff;
+}
+
+.col1, 
+.col2, 
+.col3 { 
+  padding: 1.5em ; 
+}
 
 
-    nav ul { 
-        flex-direction: column;
-    } 
 
-    nav li { 
-        margin: .5em 0em ; 
-    }
+.col1 {
+  width: 35%;
+}
 
-} 
+.col2 {
+  width: 35%;
+}
+
+.col3 {
+  width: 35%;
+}
+
+@media (max-width: 600px) {
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: 100%;
+  }
+}
+
+
+.col { 
+  padding: 2em ; 
+  text-align: center;
+}
+
+
+.desk { 
+  width: 600px ; 
+  padding: 1em ; 
+}
+
+
+.food { 
+  height: 300px ; 
+}
 
 
