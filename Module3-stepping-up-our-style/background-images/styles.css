@@ -10,5 +10,8 @@ h1 {
 
 .cat { 
     background-image: url(/static/pink-dust.png); 
-    padding: 200px ; 
+    padding: 20px ;  
+    background-size: contain; 
+    background-position: center;
+    background-repeat: repeat-x ; 
 }
