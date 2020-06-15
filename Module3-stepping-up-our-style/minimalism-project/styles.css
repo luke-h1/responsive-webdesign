@@ -114,8 +114,8 @@ strong {
 
 /* Layout */
 footer {
-  background: #143774;
-  color: #fff;
+  background:#314466;
+  color: rgb(255, 255, 255, .65) ; 
   text-align: center;
   padding: 2em 0;
 }
@@ -301,3 +301,6 @@ aside {
 .widget-image {
   order: -1;
 }
+
+
+
