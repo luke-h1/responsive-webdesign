@@ -20,9 +20,7 @@ img {
 
 
 
-/* =================
-Typography
-================= */
+/* Typography */
 h1,
 h2,
 h3 {
@@ -61,6 +59,10 @@ strong {
   font-size: 0.75rem;
   margin: 0;
 }
+
+
+
+/* ARTICLES */ 
 
 .article-title {
   font-size: 1.5rem;
@@ -103,9 +105,7 @@ strong {
   color: #143774 ; 
 }
 
-/* =================
-Layout
-================= */
+/* Layout */
 footer { 
   background: #143774 ; 
   color: #fff ;  
@@ -140,8 +140,6 @@ header {
 }
 
 
-
-
 /* navigation */
 nav ul {
   list-style: none;
@@ -174,6 +172,8 @@ nav a:focus {
   color: #707070;
 }
 
+
+/* NAV, MAIN & ASIDE MEDIA QUERIES */
 @media (max-width: 675px) {
   nav ul {
     flex-direction: column;
@@ -195,7 +195,10 @@ aside {
 }
 
 
-/* articles */
+
+
+
+/* ARTICLES */
 .article-featured {
   border-bottom: #707070 1px solid;
   padding-bottom: 1em;
@@ -225,6 +228,10 @@ aside {
     text-align: right;
   }
 }
+
+
+
+/* ARTICLE MEDIA QUERIES */   
 
 @media (min-width: 675px) {
   .article-recent {
@@ -262,7 +269,7 @@ aside {
 }
  
 
-/* widgets */
+/* WIDGETS */
 .sidebar-widget {
   border: 20px solid #efefef;
   margin-bottom: 2em;
