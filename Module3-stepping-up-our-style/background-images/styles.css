@@ -1,0 +1,14 @@
+body { 
+    margin: 0 auto ; 
+}
+
+
+h1 { 
+    font-size: 3rem ; 
+    text-align: center;
+} 
+
+.cat { 
+    background-image: url(/static/pink-dust.png); 
+    padding: 200px ; 
+}
