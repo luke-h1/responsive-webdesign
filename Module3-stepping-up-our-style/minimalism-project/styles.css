@@ -37,7 +37,8 @@ h3 {
 
 h1 {
   font-size: 2rem;
-  margin: 0;
+  margin: 0; 
+  letter-spacing: 2px ; 
 }
 
 a {
@@ -58,6 +59,8 @@ strong {
   color: #1792d2;
   font-size: 0.75rem;
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 
@@ -77,6 +80,8 @@ strong {
   color: #1792d2;
   text-decoration: none;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px ; 
 }
 
 .article-read-more:hover,
@@ -87,6 +92,7 @@ strong {
 
 .article-info {
   margin: 2em 0;
+  letter-spacing: 0.5px ; 
 }
 
 
@@ -94,6 +100,7 @@ strong {
   font-size: 1rem;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
+  line-height: 1.5 ; 
 }
 
 .widget-title,
@@ -157,6 +164,8 @@ nav a {
   color: #707070;
   font-weight: 700;
   padding: 0.25em 0;
+  text-transform: uppercase; 
+  line-height: 1px;
 }
 
 nav a:hover,
@@ -207,6 +216,7 @@ aside {
   display: flex;
   flex-direction: column;
   margin-bottom: 2em;
+  margin-top: 2em ; 
 }
 
 .article-recent-main {
