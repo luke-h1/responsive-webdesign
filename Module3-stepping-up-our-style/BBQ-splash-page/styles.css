@@ -1,182 +1,182 @@
-/* typography */ 
+/* typography */
+* {
+  box-sizing: border-box;
+}
 
-* { 
-    box-sizing: border-box;
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  color: #404040;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: #fff;
+  margin: 0em 0;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+strong {
+  font-weight: 900;
+}
+
+h1 + p {
+  font-size: 2.2rem;
+  color: #f18119;
+  text-transform: uppercase;
+  font-weight: 300;
+  order: 0;
+  margin: 0;
+}
+
+h2 + p {
+  color: #f18119;
+  font-weight: 900;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.top-text {
+  font-size: 0.6rem;
+  font-weight: 900;
+  color: #f18119;
+  text-transform: uppercase;
+  order: -1;
+  padding-top: 4px ; 
+  margin: 0 ; 
+  border-top: 6px solid #F18119; 
+  border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+  
+
+
 }
 
 
+.fine-print {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+}
 
+/* intro */
 
-body { 
-    margin: 0 ;  
-    font-family: 'Source Sans Pro', sans-serif;  
-    font-size: 1rem ; 
-    color: #404040 ; 
+.intro {
+  background-color: #443e3e;
+  background-image: url("/static/dark-ribs.jpeg");
+  padding: 0em 0.5em 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  background-blend-mode: overlay ; 
+}
+
+.container-intro {
+  display: flex;
+  justify-content: space-between;
+  min-height: 50vh;
+  flex-direction: column;
+}
+
+/* Main Content Section */
+.main-content {
+  padding: 2em 1em;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* media queries */
+@media (min-width: 500px) {
+  body {
+    font-size: 1.2rem;
+    display: flex;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2,
+  h1 + p {
+    font-size: 1.7rem;
+  }
+
+  .intro,
+  .main-content {
+    width: 50%;
+    min-height: 100vh;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-} 
+    align-items: center;
+  }
 
-h1 { 
-    font-size: 2.25rem ; 
-    font-weight: 300 ;
-    color: #fff ; 
-    margin: 0em 0 ; 
-
+  .container-intro {
+    height: 100%;
+  }
 }
 
+/* form */
 
-h2 { 
-    font-size: 1.3rem ;  
-    margin: 0 ; 
-}
-
-strong { 
-    font-weight: 900;
-} 
-
-h1 + p { 
-    font-size: 2.2rem ; 
-    color: #f18119 ;  
-    text-transform: uppercase;
-    font-weight: 300 ; 
-    order: 0 ; 
-    margin: 0 ; 
-
- 
-}
-h2 + p { 
-    color: #f18119 ; 
-    font-weight: 900; 
-    font-size: 1.3rem ; 
-    text-transform: uppercase;
-    margin-top: 0 ; 
-
-}
-
-
-.top-text { 
-    font-size: 0.6rem ; 
-    font-weight: 900 ; 
-    color: #f18119 ; 
-    text-transform: uppercase;
-    order: -1 ;
-}
-
-
-
-.fine-print { 
-    font-size: 0.6rem ; 
-    letter-spacing: 0.1em ; 
-}
-
-/* intro */ 
-
-.intro { 
-    background-color: #404040 ; 
-    background-image: url("/static/dark-ribs.jpeg") ; 
-    padding: 0em .5em 2em ; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  
-}
-
-
-
-
-
-
-.container-intro { 
-    display: flex ; 
-    justify-content: space-between;  
-    min-height: 50vh;
-    flex-direction: column; 
-}
-
-
-
-
-/* Main Content Section */ 
-
-.main-content { 
-    padding: 2em 1em ; 
-  
-}
-
-
-.container { 
-    max-width: 400px ; 
-    margin: 0 auto ; 
-}
-
-
-
-
-
-
-
-/* media queries */ 
-@media (min-width:500px) { 
-    body { 
-         font-size: 1.2rem ;  
-         display: flex ; 
-    }
-
-    h1 { 
-        font-size: 3.5rem ; 
-    }
-
-    h2,
-    h1 + p  { 
-        font-size: 1.7rem ; 
-    }
-
-    .intro, 
-    .main-content { 
-        width: 50% ; 
-        min-height: 100vh ; 
-        
-        
-
-    } 
-
-
-    .main-content { 
-        display: flex ; 
-        flex-direction: column; 
-        justify-content: center;
-        text-align: center;  
-        align-items: center;
-    } 
-
-    .container-intro { 
-        height: 100% ; 
-    }
-    
-} 
-
-
-
-
-
-/* form */ 
-
-.register { 
-    width: 90%;  
-    max-width: 300px ; 
+.register {
+  width: 90%;
+  max-width: 300px; 
+  margin-left: 3.0rem ; 
 }
 
 input,
-.btn-main { 
-    width: 100% ;  
-    border-radius: 8px;
-
+.btn-main {
+  width: 100%;
+  border-radius: 2px; 
 }
 
-input { 
-    margin-bottom: .75em ; 
-    font-family: inherit;
-    text-align: inherit;
-    padding: .30em ; 
-    border: 1px solid #404040 ; 
-    border-radius: 8px;
+input {
+  margin-bottom: 0.75em;
+  font-family: inherit;
+  text-align: inherit;
+  padding: 0.3em;
+  border: 1px solid #404040;
+  border-radius: 2px;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 0.85em 1em;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-main {
+  background-image: linear-gradient(to left, #ff713b, #ffa51d);
+  color: #fff;
+  transition: color 500ms;
+  transition: 300ms ;
+
+}
+ 
+
+
+.btn-main:hover,
+.btn-main:focus { 
+    color: black; 
+    transform: scale(1.1); 
+    transition: 1s ;
 }
