@@ -1,17 +1,16 @@
-body { 
-    margin: 0 auto ; 
+body {
+  margin: 0 auto;
 }
 
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
 
-h1 { 
-    font-size: 3rem ; 
-    text-align: center;
-} 
-
-.cat { 
-    background-image: url(/static/pink-dust.png); 
-    padding: 20px ;  
-    background-size: contain; 
-    background-position: center;
-    background-repeat: repeat-x ; 
+.cat {
+  background-image: url(/static/pink-dust.png);
+  padding: 20px;
+  background-size: contain;
+  background-position: cover;
+  background-repeat: repeat-x;
 }
