@@ -19,7 +19,7 @@ h1 {
     font-size: 2.25rem ; 
     font-weight: 300 ;
     color: #fff ; 
-    margin: 2em 0 ; 
+    margin: 0em 0 ; 
 
 }
 
@@ -58,10 +58,10 @@ h2 + p {
     font-weight: 900 ; 
     color: #f18119 ; 
     text-transform: uppercase;
-    order: -1  ;
-
-
+    order: -1 ;
 }
+
+
 
 .fine-print { 
     font-size: 0.6rem ; 
@@ -78,15 +78,39 @@ h2 + p {
     background-size: cover;
     background-position: center;
     display: flex ; 
+    justify-content: space-between;  
+    min-height: 50vh;
     flex-direction: column; 
-} 
+}
+
+
+
+
+
+
+
+
 
 
 /* Main Content Section */ 
 
 .main-content { 
     padding: 2em 1em ; 
+  
 }
+
+
+.intro > *, 
+.main-content > *  { 
+    margin-left: auto ; 
+    margin-right: auto ; 
+}
+
+
+
+
+
+
 
 
 
@@ -113,7 +137,20 @@ h2 + p {
         
         
 
-    }
+    } 
 
+
+    .main-content { 
+        display: flex ; 
+        flex-direction: column; 
+        justify-content: center;
+        text-align: center;  
+        align-items: center;
+    } 
     
-}
+} 
+
+
+
+
+
