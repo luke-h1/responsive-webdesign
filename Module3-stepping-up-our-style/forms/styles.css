@@ -1,0 +1,29 @@
+form { 
+    background: #efefef ; 
+    padding: 2em ; 
+}
+
+
+input { 
+    margin-bottom: 1em ; 
+    padding: .3em ; 
+    border: 0 auto ; 
+    margin: 0 auto ;  
+    text-align: left;
+}
+
+
+
+button { 
+    background: none ; 
+    border: .5px solid ; 
+
+
+}
+
+
+
+button:hover { 
+    color: blue ; 
+    cursor: pointer ; 
+}
