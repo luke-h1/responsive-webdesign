@@ -45,19 +45,29 @@ h2 + p {
 }
 
 .top-text {
-  font-size: 0.6rem;
-  font-weight: 900;
-  color: #f18119;
-  text-transform: uppercase;
-  order: -1;
-  padding-top: 4px ; 
-  margin: 0 ; 
-  border-top: 6px solid #F18119; 
-  border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
-  
-
-
+    font-size: 0.625rem;
+    margin: 0;
+    padding-top: 2px;
+    color: #F18119;
+    font-weight: 900;
+    text-transform: uppercase;
+    order: -1;
+    border-top: 5px solid #F18119;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .fine-print {
