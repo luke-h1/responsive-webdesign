@@ -180,3 +180,33 @@ input {
     border: 1px solid #404040 ; 
     border-radius: 8px;
 }
+
+
+
+.btn { 
+    display: inline-block ; 
+    padding: .85em 1.0em ; 
+    text-transform: uppercase ; 
+    font-size: 0.6rem ; 
+    font-weight: 900;
+    letter-spacing: 1px ; 
+    border: 0 ;
+    cursor: pointer; 
+    
+
+
+}
+
+
+.btn-main { 
+    background-image: linear-gradient(to left, #FF713B, #FFA51D) ;     
+    color: #fff ; 
+    transition: color 500ms ; 
+}    
+
+
+.btn-main:hover { 
+    color: black ;     
+
+}
+
