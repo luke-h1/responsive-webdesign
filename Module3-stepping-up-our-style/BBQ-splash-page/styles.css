@@ -78,14 +78,17 @@ h2 + p {
 /* intro */
 
 .intro {
-  background-color: #443e3e;
+  background-color: #6d5d5d;
   background-image: url("/static/dark-ribs.jpeg");
   padding: 0em 0.5em 2em;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 
   background-blend-mode: overlay ; 
+  /*     border-image: linear-gradient(to left, #ff713b, #ffa51d) 1; */ 
+
 }
+
 
 .container-intro {
   display: flex;
