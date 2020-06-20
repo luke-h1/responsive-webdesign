@@ -18,13 +18,14 @@ body {
     justify-content: space-between;
     /* flex-direction: row;
     flex-wrap: nowrap; */
+    flex-direction: column;
     min-height: 50vh;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .flex-item {
     background: #8BEE86;
-    margin: .5em;
-    padding: .5em;
+    margin: .5rem;
+    padding: .5rem;
     color: #424656;
 }
