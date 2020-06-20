@@ -3,7 +3,7 @@ body {}
 .card-title,
 .card-read-more,
 .card-btn {
-    font-family: 'Blinker', sans-serif;
+    font-family: "Blinker", sans-serif;
 }
 
 .card {
@@ -18,8 +18,10 @@ body {}
 
 .card-img {
     object-fit: cover;
-    height: 200px;
-    background: yellow;
+    flex-basis: 200px;
+    /* background: yellow; */
+    min-width: 0;
+    min-height: 0;
 }
 
 .card-content {
@@ -34,7 +36,7 @@ body {}
 
 .card-body {
     font-size: 1rem;
-    font-family: 'Source Sans Pro';
+    font-family: "Source Sans Pro";
     line-height: 1.6;
 }
 
@@ -52,7 +54,7 @@ body {}
     background: #05cbe9;
     text-decoration: none;
     font-weight: 700;
-    padding: .45em 1.25em;
+    padding: 0.45em 1.25em;
     letter-spacing: 1px;
 }
 
@@ -67,4 +69,28 @@ body {}
     font-weight: 700;
     display: block;
     font-size: 1.2em;
+}
+
+@media (min-width: 600px) {
+    .card {
+        flex-direction: row;
+    }
+    .card-img {
+        height: 300px;
+    }
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .card-title {
+        font-size: 2.2rem;
+    }
+    .card-body {
+        font-size: 1.2rem;
+        max-width: 500px;
+    }
+    .card-footer {
+        margin-top: auto;
+    }
 }
