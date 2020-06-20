@@ -11,21 +11,25 @@ body {
 
 .flex-container {
     border: 10px solid #F9F871;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     padding: .25em;
+    min-height: 300vh;
     display: flex;
-    justify-content: space-between;
-    /* flex-direction: row;
-    flex-wrap: nowrap; */
-    flex-direction: column;
-    min-height: 50vh;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: baseline; */
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.big {
+    font-size: 2em;
 }
 
 .flex-item {
     background: #8BEE86;
-    margin: .5rem;
-    padding: .5rem;
+    margin: 25px;
+    padding: 25px;
     color: #424656;
 }
