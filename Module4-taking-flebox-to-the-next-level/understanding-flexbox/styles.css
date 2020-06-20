@@ -17,7 +17,7 @@ body {
     min-height: 300vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: right;
     /* align-items: baseline; */
     align-content: flex-end;
     align-items: flex-end;
@@ -32,4 +32,8 @@ body {
     margin: 25px;
     padding: 25px;
     color: #424656;
+}
+
+.flex-item-1 {
+    background: plum;
 }
