@@ -1,0 +1,70 @@
+body {}
+
+.card-title,
+.card-read-more,
+.card-btn {
+    font-family: 'Blinker', sans-serif;
+}
+
+.card {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+    background: #111d4a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    object-fit: cover;
+    height: 200px;
+    background: yellow;
+}
+
+.card-content {
+    padding: 1em;
+}
+
+.card-title {
+    color: #05cbe9;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.card-body {
+    font-size: 1rem;
+    font-family: 'Source Sans Pro';
+    line-height: 1.6;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 3em;
+}
+
+.card-btn {
+    font-size: 1.25rem;
+    letter-spacing: 1.5px;
+    color: #111d4a;
+    background: #05cbe9;
+    text-decoration: none;
+    font-weight: 700;
+    padding: .45em 1.25em;
+    letter-spacing: 1px;
+}
+
+.card-read-time {
+    margin: 20;
+    font-size: 16px;
+    opacity: 0.6;
+    line-height: 1;
+}
+
+.card-read-time span {
+    font-weight: 700;
+    display: block;
+    font-size: 1.2em;
+}
