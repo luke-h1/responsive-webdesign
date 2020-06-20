@@ -1,0 +1,38 @@
+body {}
+
+.card-title,
+.card-read-more,
+.card-btn {
+    font-family: 'Blinker', sans-serif;
+}
+
+.card {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+    background: #111d4a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    object-fit: cover;
+    /* height: 200px; */
+}
+
+.card-title {
+    color: #05cbe9;
+    font-size: 1.7rem;
+    font-family: 'Blinker', sans-serif;
+}
+
+.card-body {
+    font-size: 1rem;
+    font-family: 'Source Sans Pro';
+}
+
+.card-btn {
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+}
