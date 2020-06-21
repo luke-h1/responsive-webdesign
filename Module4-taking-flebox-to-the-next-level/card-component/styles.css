@@ -1,4 +1,9 @@
-body {}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .card-title,
 .card-read-more,
@@ -8,7 +13,6 @@ body {}
 
 .card {
     width: 90%;
-    margin: 0 auto;
     max-width: 800px;
     background: #111d4a;
     color: #fff;
