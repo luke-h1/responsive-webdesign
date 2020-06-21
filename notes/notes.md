@@ -896,7 +896,7 @@ cursor: pointer; color: #fff ;
 
 Basic transitions:
 
-.btn-main { background-image: linear-gradient(to left, #FF713B, #FFA51D) ;  
+.btn-main { background-image: linear-gradient(to left, #FF713B, #FFA51D) ;
  color: #fff ; transition: color 500ms ; }
 
 Intro to transforms:
