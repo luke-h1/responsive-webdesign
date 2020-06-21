@@ -1365,7 +1365,7 @@ Setting up a basic grid:
          grid-template-columns: 100px 500px 100px ; 
 
 
-* if you are declaring both rows and columns you can use the grid-template shorthand. The values start with the rows, then you use a / to start declaring columns: 
+* if you are declaring both rows and columns you can use the grid-template shorthand. The values start with the rows, then you use  / to start declaring columns: 
 
          grid-template: 100px 100px 500px / 300px 300px 100px ; 
          
@@ -1401,3 +1401,8 @@ body {
 
 * grid-template-rows = add rows : 
       grid-template-rows: 50px 200px ; 
+
+
+column = define width of column 
+
+rows = define height of each row. 
