@@ -1406,3 +1406,23 @@ body {
 column = define width of column 
 
 rows = define height of each row. 
+
+
+
+placing items on the grid: 
+
+* you can tell grid items where they live within their parent's grid with the following properties: 
+
+      * grid-column-start
+
+      * grid-column-end 
+
+      * grid-row-start 
+
+      * grid-row-end 
+
+
+* these 4 properties are used on the flex item not on the flex parent. 
+
+
+
