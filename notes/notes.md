@@ -1365,7 +1365,7 @@ Setting up a basic grid:
          grid-template-columns: 100px 500px 100px ; 
 
 
-* if you are declaring both rows and columns you can use the grid-template shorthand. The values start with the rows, then you use a / to start declaring columns: 
+* if you are declaring both rows and columns you can use the grid-template shorthand. The values start with the rows, then you use  / to start declaring columns: 
 
          grid-template: 100px 100px 500px / 300px 300px 100px ; 
          
@@ -1383,7 +1383,26 @@ Setting up a grid:
 * the parent then becomes the grid container and turns it into a grid right away & the children will fall onto that grid. 
 
 
-* the only change you will 
+* the only change you will see at first, is that the margin will no longer    collapse.  
+
+body {
+    display: grid;
+} 
+
+* to properly use CSS Grid, you need to define rows & columns. 
+
+* because flexbox only deals with one dimesion, you don't have to worry about rows and columns. you can just switch back & forth with flex-direction. 
+
+* With Grid you have both. You can explicitly create them and then place items within the grid that you have created. 
+
+* grid-template-columns = define how big you want each column to be: 
+      grid-template-columns: 200px 200px 350px ; 
 
 
+* grid-template-rows = add rows : 
+      grid-template-rows: 50px 200px ; 
 
+
+column = define width of column 
+
+rows = define height of each row. 
