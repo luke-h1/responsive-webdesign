@@ -1326,3 +1326,64 @@ align-self
 
 
 
+Module 5:CSS grid: the ultimate layout tool: 
+
+
+Intro to CSS Grid: 
+
+* Flexbox was the first layout tool in CSS 
+
+* flexbox has it's limitations: Flexbox only deals with 1-dimestion at a time.
+
+* Grid enables you to create a grid. This means that you can work on both the vertical and horizontal axis at the same time. This opens up new layout possibilites that you simply don't have with just flexbox (or they were very dificult to make work). 
+
+* using CSS grid also enables you to simply the HTML markup. You don't have to think so hard about how content needs to be grouped, resulting in much "flatter" HTML. 
+
+* while CSS Grid simplifies the markup it does come with addded complexitiy: 
+   * grid-template-columns 
+   * grid-template-rows 
+   * grid-auto-columns 
+   * grid-auto-rows 
+   * grid-column-start
+   * grid-column-end 
+   * grid-row-start
+   * grid-row-end 
+   * grid-template-areas 
+   * grid-gap 
+   * minmax() 
+   * repeat() 
+   * fr 
+   * & more.....  
+
+
+Setting up a basic grid: 
+
+* you can define a grid by, on the parent, declaring grid-template-rows and grid-template-columns. 
+
+* to set the widths for columns (or heights for your rows), all you need to do is to place as many values as needed, sepeated by a space: 
+
+         grid-template-columns: 100px 500px 100px ; 
+
+
+* if you are declaring both rows and columns you can use the grid-template shorthand. The values start with the rows, then you use a / to start declaring columns: 
+
+         grid-template: 100px 100px 500px / 300px 300px 100px ; 
+         
+
+
+
+Setting up a grid: 
+
+* The first step to creating a grid is declaring display: grid on the parent element. This creates a new grid formatting context, similar to when you declare display: flex ; in many ways. 
+
+* Margins now no longer collapse and the direct children of the element become grid items. 
+
+* similar to flexbox, when you create a new grid container, the flex children will fall onto the grid 
+
+* the parent then becomes the grid container and turns it into a grid right away & the children will fall onto that grid. 
+
+
+* the only change you will 
+
+
+
