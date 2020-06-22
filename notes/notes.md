@@ -1411,6 +1411,8 @@ rows = define height of each row.
 
 placing items on the grid: 
 
+* content will place itself automatically on the grid. You can also explicitly place items where you want them to be 
+
 * you can tell grid items where they live within their parent's grid with the following properties: 
 
       * grid-column-start

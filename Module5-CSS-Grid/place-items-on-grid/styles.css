@@ -5,10 +5,26 @@
 
 .grid-item {
     background: #b823C1;
-    color: white;
+    color: #fff;
     padding: 1em 2em;
     border: 2px solid purple;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.grid-item-two {
+    background: #FF5670;
+}
+
+
+/* grid-row-start: 2; */
+
+
+/* grid-row-end: 3; */
+
+
+/* grid-column-start: 1; */
+
+
+/* grid-column-end: 3; */
