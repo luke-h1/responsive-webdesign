@@ -1,6 +1,8 @@
 .grid {
     display: grid;
-    grid-template: 100px 100px 100px / 200px 200px 200px;
+    grid-template-columns: 150px 150px 200px;
+    /* align-items: center; */
+    /* justify-items; */
 }
 
 .grid-item {
@@ -13,18 +15,12 @@
     justify-content: center;
 }
 
-.grid-item-two {
+.big {
+    padding: 3em 2em;
     background: #FF5670;
 }
 
-
-/* grid-row-start: 2; */
-
-
-/* grid-row-end: 3; */
-
-
-/* grid-column-start: 1; */
-
-
-/* grid-column-end: 3; */
+.start {
+    align-self: flex-end;
+    justify-self: flex-end;
+}
