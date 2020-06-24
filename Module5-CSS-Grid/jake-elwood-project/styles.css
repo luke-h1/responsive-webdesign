@@ -1,0 +1,152 @@
+* { 
+    box-sizing: border-box ; 
+}
+
+body { 
+    margin: 0   ; 
+    font-family: 'Montserrat', sans-serif ; 
+    font-size: 1rem ; 
+    color: #404040 ; 
+    line-height: 1.6 ; 
+}
+
+
+
+/* ======================= 
+        general layout  
+========================== */ 
+
+.main-grid { 
+    display: grid; 
+    grid-template-columns: minmax(1em, 1fr ) minmax(0px, 500px) minmax(1em, 1fr ); 
+}
+
+
+.footer { 
+    background: #ebebeb ; 
+    padding: 4em 0 ; 
+    text-align: center;
+}
+
+.footer-main,
+.social-list { 
+    grid-column: 2 / -2 ;
+}
+
+.social-list { 
+    order: -1 ; 
+    list-style: none;
+    padding: 0 ; 
+    margin: 0 0 2em;  
+    display: flex ;  
+    justify-content: center; 
+    letter-spacing: 1px ;
+}
+
+
+
+
+
+/* ======================= 
+        font-awesome 
+========================== */ 
+
+.social-link { 
+    color: #000 ; 
+    font-size: 1.7rem ; 
+    margin: 0 .5em ;  
+}
+
+
+
+
+.social-link:hover { 
+    color:#777 ; 
+}
+
+
+
+
+
+
+/* ======================= 
+        typography 
+========================== */ 
+
+.footer-logo,
+.footer-text,
+.footer-fineprint { 
+    opacity: .4 ; 
+}
+
+.footer-fineprint { 
+    margin-top: 4em ; 
+    font-size: .7em ; 
+}
+
+h1,
+h2,
+strong { 
+    font-weight: 700 ; 
+}
+
+.hero-title { 
+    font-size: 24px ; 
+    line-height: 1.4 ; 
+    margin-bottom: 0 ; 
+}
+
+.accent-color { 
+    color: #FFe600 ; 
+}
+
+.section-title { 
+    font-size: 18px ; 
+    color: #000 ; 
+    margin-top: 1.2em ; 
+}
+
+/* buttons */ 
+
+.btn { 
+    padding: .5em 1.7em ; 
+    font-weight: 700;
+    margin-top: .5em ;   
+}
+
+
+.btn-primary { 
+    background: #FFe600;
+    color: #000 ; 
+    justify-self: start;
+}
+
+/* ======================= 
+        hero area 
+========================== */ 
+
+.hero { 
+ 
+    background-image: url(/static/hero-bg.jpg) ; 
+    color: #fff ; 
+    padding: 4em 0 ; 
+}
+
+.hero > * { 
+    grid-column: 2 / -2 ; 
+}
+
+
+/* ======================= 
+        info section  
+========================== */ 
+
+.info { 
+    padding: 4em 0 ; 
+    text-align; center ; 
+
+}
+
+.col { 
+    grid-column: 2 / -2 ; 
+}
