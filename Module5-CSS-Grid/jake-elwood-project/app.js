@@ -12,5 +12,3 @@ const openButton = document.querySelector(".open-nav");
 openButton.addEventListener("click", () => {
   nav.classList.add("navigation-open");
 });
-
-// TO-DO: FIX WIDTH ON HAMBURGER MENU (I.E. SO IT DOESN'T FILL UP FULL SCREEN )
