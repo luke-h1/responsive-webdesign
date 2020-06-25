@@ -59,9 +59,9 @@ strong {
   margin: 0.7em 0 1.5em;
 }
 
-.hero-subtitle { 
-  color:#fff ; 
-  font-size: 1.1rem ; 
+.hero-subtitle {
+  color: #fff;
+  font-size: 1.1rem;
 }
 .hero-title {
   font-size: 1.5rem;
@@ -116,10 +116,9 @@ strong {
   justify-self: end;
 }
 
-
 .btn-primary:focus,
-.btn-primary:hover { 
-    background: #ffc400 ; 
+.btn-primary:hover {
+  background: #ffc400;
 }
 
 /* ==================
@@ -143,8 +142,8 @@ strong {
 
 /* navigation */
 
-.current { 
-  border-bottom: 1px solid #ffe600 ; 
+.current {
+  border-bottom: 1px solid #ffe600;
 }
 
 .header {
@@ -454,5 +453,3 @@ textarea {
     grid-column: 3;
   }
 }
-
-
