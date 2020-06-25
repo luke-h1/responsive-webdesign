@@ -10,6 +10,10 @@ body {
   line-height: 1.6;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* ==================
     Typography
 ===================== */
@@ -24,6 +28,26 @@ strong {
   color: #ffe600;
 }
 
+.page-title,
+.subtitle {
+  grid-column: 2 / -2;
+  text-align: center;
+  color: #000;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin: 0 auto  ; 
+  margin-bottom: 0 ; 
+  padding: 0 ; 
+}
+
+.subtitle {
+  font-size: 1.1rem; 
+  margin-top: .5em ; 
+  margin: .7em 0 1.5em 
+}
+
 .hero-title {
   font-size: 1.5rem;
   line-height: 1.4;
@@ -34,6 +58,24 @@ strong {
   font-size: 1.125rem;
   color: #000;
   margin-top: 1.25em;
+}
+
+.section-title::after { 
+   content: "" ; 
+   display: block ;  
+   width: 60px ; 
+   height: 3px ; 
+   margin: 10px 0 0 ; 
+   background: #ffe600
+  }
+
+
+.section-title-center::after { 
+  margin: 0 auto ;   
+}
+
+.section-title:first-child { 
+  margin-top: 0 ; 
 }
 
 /* buttons */
@@ -305,28 +347,21 @@ ABOUT PAGE
 ===================== */
 
 .main-template > * {
+  padding: 1em 0;
   grid-column: 2 / -2;
 }
 
+@media (min-width: 600px) {
+  .main-image {
+    grid-column: 2 / 3;
+  }
 
-.main-template { 
-  padding: 4em 0 ; 
+  .main-text {
+    grid-column: 3 / span 2;
+  }
 }
 
-
-
-
-img { 
-  max-width: 100% ; 
-  display: block ; 
-}  
-
-@media (min-width: 600px) { 
-  .main-image { 
-    grid-column: 2; 
-  }
-
-  .main-text { 
-    grid-column: 3 / span 2 ;
-  }
+.main-image { 
+  margin-bottom: 1.5em; 
+  box-shadow: 5px 5px 0px black, 10px 10px 0 #ffe600 ;   
 }
