@@ -19,12 +19,12 @@ body {
 .main-grid { 
     display: grid; 
     grid-template-columns: minmax(1em, 1fr ) minmax(0px, 500px) minmax(1em, 1fr ); 
-    grid-column-gap: 2em; 
+    grid-column-gap: 3em; 
 }
 
 @media (min-width:600px) { 
     .main-grid { 
-        grid-template-columns: minmax(1em, 1fr ) repeat(3, minmax(150px, 320px)) minmax(1em, 1fr ); 
+        grid-template-columns: minmax(1em, 1fr ) repeat(3, minmax(0px, 320px)) minmax(1em, 1fr ); 
     }
 }
 
@@ -87,11 +87,9 @@ body {
 }
 
 
-
 /* ======================= 
         typography 
 ========================== */ 
-
 .footer-logo,
 .footer-text,
 .footer-fineprint { 
@@ -122,7 +120,7 @@ strong {
 .section-title { 
     font-size: 18px ; 
     color: #000 ; 
-    margin-top: 1.2em ; 
+    margin-top: 1.0em ; 
 }
 
 /* buttons */ 
@@ -176,7 +174,7 @@ strong {
 
 .info { 
     padding: 4em 0 ; 
-    text-align; center ; 
+    text-align: center ; 
 
 }
 
@@ -235,7 +233,6 @@ strong {
     width: 100% ; 
     left: 100% ;  
     transform: translateX(0%) ; 
-
 }
 
 
@@ -260,7 +257,6 @@ strong {
     text-decoration: none;
     font-size: 3rem ; 
     font-weight: 700 ; 
-
 }
 
 .nav-link:hover,
@@ -277,4 +273,15 @@ strong {
     cursor: pointer; 
     padding: .5em ; 
     position: absolute;
+}
+
+
+.open-nav { 
+    border: 0 ; 
+    background: 0 ; 
+    color: #fff ; 
+    cursor: pointer; 
+    padding: 1em ; 
+    margin-left: auto ; 
+    font-size: 25px ; 
 }
