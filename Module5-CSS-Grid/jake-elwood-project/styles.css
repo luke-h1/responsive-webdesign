@@ -40,6 +40,17 @@ strong {
   margin: 0 auto  ; 
   margin-bottom: 0 ; 
   padding: 0 ; 
+  justify-self: center;
+}
+
+.page-title::after { 
+  content: '' ; 
+  display:block ; 
+  margin-top: -40px ;  
+  margin-left: 15px ; 
+  height: 35px ;
+  margin-bottom: .5em ;   
+  background-color: #ffe600
 }
 
 .subtitle {
@@ -72,7 +83,7 @@ strong {
 
 .section-title-center::after { 
   margin: 0 auto ;   
-}
+} 
 
 .section-title:first-child { 
   margin-top: 0 ; 
@@ -80,17 +91,29 @@ strong {
 
 /* buttons */
 
-.btn {
-  padding: 0.5em 1.75em;
-  font-weight: 700;
-  margin-top: 0.5em;
-  text-decoration: none;
-}
 
+
+.btn {
+  padding: .5em 1.75em;
+  font-weight: 700;
+  margin-top: .5em;
+  text-decoration: none;
+  border: 0 ; 
+}
 .btn-primary {
   background: #ffe600;
   color: #000;
   justify-self: start;
+
+}
+
+.btn-form { 
+  background: #ffe600;
+  color: #000;
+  display: block ; 
+  padding: 0.75em ; 
+  justify-self: end;
+
 }
 
 /* ==================
@@ -359,9 +382,39 @@ ABOUT PAGE
   .main-text {
     grid-column: 3 / span 2;
   }
+
+  .secondary-text { 
+    order: 2 ; 
+  }
 }
 
 .main-image { 
   margin-bottom: 1.5em; 
   box-shadow: 5px 5px 0px black, 10px 10px 0 #ffe600 ;   
+}
+
+
+/* ===================
+      FORM 
+======================= */
+
+.contact-form { 
+  display: grid ; 
+}
+
+label { 
+  font-weight: 700 ; 
+}
+
+input,
+textarea { 
+  margin-bottom: .8em ; 
+  padding: .8em ; 
+  font-family: inherit;
+}
+
+textarea { 
+  resize: none ; 
+  height: 100px ; 
+  border: 0 auto ; 
 }
