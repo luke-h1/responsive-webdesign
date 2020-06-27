@@ -227,17 +227,22 @@ p {
 
   .header-home .nav {
     background: transparent;
-    /* this may be broken idk until everything is done :) */
   }
 }
 
-/* footer */
 
-/* .footer {
-  padding: 4em 0;
-  text-align: center;
-  padding-top: 2em ;  
-} */
+
+
+.footer-logo,
+.footer-text,
+.footer-fineprint { 
+  opacity: 0.3 ; 
+} 
+
+.footer-fineprint { 
+  font-size: 0.75rem ; 
+  margin-top: 4em ; 
+}
 
 .footer-main {
   text-align: center;
@@ -427,7 +432,7 @@ label {
 input,
 textarea { 
   margin-bottom: 0.8em ; 
-  padding: 0.5em  ;  
+  padding: 0.4em  ;  
   font-family: inherit;
 }
 
@@ -478,6 +483,28 @@ textarea {
 
 
 
-.page-title { 
+.page-title,
+.subtitle { 
   color: #000 ; 
+  text-align: center;
 }
+
+.page-title { 
+  font-size: 2rem ; 
+  margin: 0 auto ; 
+  margin-bottom: 0 ; 
+  padding: 0 ; 
+  justify-self: center;
+}
+
+.page-title::after { 
+  content: "" ; 
+  display: block ; 
+  margin-top: -10px;   
+  margin-left: 15px ; 
+  height: 35px ; 
+  margin-bottom: 0.5em ;  
+  background-color: #ffe600 ; 
+}
+
+
