@@ -24,17 +24,16 @@ strong {
   font-weight: 700;
 }
 
-p { 
-  color: #000 ; 
-  font-family: inherit; 
+p {
+  color: #000;
+  font-family: inherit;
 }
-
 
 .subtitle {
   font-size: 1rem;
   margin-top: 0.5em;
   margin: 0.7em 0 1.5em;
-  color: #000 ; 
+  color: #000;
   font-family: inherit;
 }
 
@@ -87,14 +86,13 @@ p {
   justify-self: start;
 }
 
-/* contact form button */
 .btn-form {
   padding: 0.2em 1.2em;
   font-weight: 700;
   margin-top: 0.5em;
   text-decoration: none;
-  border: 0 auto ;
-  cursor: pointer; 
+  border: 0 auto;
+  cursor: pointer;
 }
 
 .btn-primary:focus,
@@ -125,12 +123,11 @@ p {
 
 /* NAVIGATION */
 
-
-.open-nav { 
-  border: 0 ; 
-  background: black ; 
-  font-size: 25px ; 
-  margin-left: 3rem ; 
+.open-nav {
+  border: 0;
+  background: black;
+  font-size: 25px;
+  margin-left: 3rem;
 }
 
 .current {
@@ -240,22 +237,24 @@ p {
 
 
 
-
+/* ===============
+      FOOTER 
+   ===============*/
 .footer-logo,
 .footer-text,
-.footer-fineprint { 
-  opacity: 0.3 ; 
-} 
+.footer-fineprint {
+  opacity: 0.3;
+}
 
-.footer-fineprint { 
-  font-size: 0.75rem ; 
-  margin-top: 4em ; 
+.footer-fineprint {
+  font-size: 0.75rem;
+  margin-top: 4em;
 }
 
 .footer-main {
   text-align: center;
   padding: 2em 0;
-  color: #000 ; 
+  color: #000;
 }
 
 .social-list {
@@ -327,7 +326,9 @@ p {
   }
 }
 
-/* INFO SECTION  */
+/* ==============
+       INFO  
+   ==============*/
 
 .info {
   padding: 4em 0;
@@ -379,9 +380,8 @@ p {
   color: #000;
 }
 
-/* @media (min-width: 600px) { 
-  .col { 
-} */
+
+
 
 /* ================
     BUTTONS 
@@ -393,9 +393,9 @@ p {
   margin-top: 0.5em;
   text-decoration: none;
   border: 0;
-  cursor: pointer;  
-  width: 25%  ;  
-  margin-left: 50px ; 
+  cursor: pointer;
+  width: 25%;
+  margin-left: 50px;
 }
 .btn-primary {
   background: #ffe600;
@@ -403,59 +403,53 @@ p {
   justify-self: start;
 }
 
-
 .btn-primary:focus,
 .btn-primary:hover {
   background: #ffc400;
-} 
-
-
-
-/* about page */
-
-.main-template > * { 
-  padding: 1em 0  ; 
-
 }
 
-/* ==================
-      FORM 
+/* ================
+    ABOUT PAGE  
+   ================ */
 
-   ==================*/
-
-.contact-form { 
-  display: flex ;  
-  flex-direction: column; 
-  padding: 0 2em ;   
-  color: #000 ; 
-  width: 100% ;  
-
+.main-template > * {
+  padding: 1em 0;
 }
 
-label { 
-  font-weight: 700; 
-  padding: 0 2em ;  
+/* ================
+    FORM  
+   ================ */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  color: #000;
+  width: 100%;
+}
+
+label {
+  font-weight: 700;
+  padding: 0 2em;
 }
 
 input,
-textarea { 
-  margin-bottom: 0.8em ; 
-  padding: 0.4em  ;  
+textarea {
+  margin-bottom: 0.8em;
+  padding: 0.4em;
   font-family: inherit;
 }
 
-textarea { 
-  resize: none ; 
-  margin: 0  ; 
-  height: 100px ; 
+textarea {
+  resize: none;
+  margin: 0;
+  height: 100px;
 }
 
-
-
-.main-image { 
-  background-size: cover ; 
-  background-position: center; 
-  width: 500px  ;  
+.main-image {
+  background-size: cover;
+  background-position: center;
+  width: 500px;
 }
 
 /* 
@@ -464,23 +458,19 @@ textarea {
   padding: 0 2em  ;  
 } */
 
-
-
-@media (min-width: 600px ) { 
-  .main-image { 
-    flex-direction: row; 
+@media (min-width: 600px) {
+  .main-image {
+    flex-direction: row;
   }
 
-  .main-text { 
-    flex-wrap: wrap ;  
+  .main-text {
+    flex-wrap: wrap;
     align-items: flex-end;
   }
+}
 
-} 
-
-.main-image { 
-  margin-bottom: 1.5em  ;  
-
+.main-image {
+  margin-bottom: 1.5em;
 }
 
 .section-title {
@@ -489,37 +479,30 @@ textarea {
   margin-top: 1.25em;
 }
 
-
-
 .page-title,
-.subtitle { 
-  color: #000 ; 
+.subtitle {
+  color: #000;
   text-align: center;
 }
 
-.page-title { 
-  font-size: 2rem ; 
-  margin: 0 auto ; 
-  margin-bottom: 0 ; 
-  padding: 0 ; 
+.page-title {
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-bottom: 0;
+  padding: 0;
   justify-self: center;
 }
 
-.page-title::after { 
-  content: "" ; 
-  display: block ; 
-  margin-top: -10px;   
-  margin-left: 15px ; 
-  height: 35px ; 
-  margin-bottom: 0.5em ;  
-  background-color: #ffe600 ; 
+.page-title::after {
+  content: "";
+  display: block;
+  margin-top: -10px;
+  margin-left: 15px;
+  height: 35px;
+  margin-bottom: 0.5em;
+  background-color: #ffe600;
 }
 
-
-
-
-
-
-.accent-color { 
-  color: #ffe600
+.accent-color {
+  color: #ffe600;
 }
