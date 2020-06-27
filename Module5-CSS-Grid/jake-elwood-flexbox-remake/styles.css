@@ -99,13 +99,18 @@ strong {
 
 .main-flex {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  color: #fff ; 
+  background-size: cover ;  
+  background-position: bottom ; 
+  text-align: center;
 }
 
 @media (min-width: 600px) {
   .main-flex {
     display: flex;
     flex-direction: column;
+    width: 100% ; 
   }
 }
 
@@ -127,7 +132,7 @@ strong {
 
 .header-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; 
 }
 
 .logo-link {
@@ -219,27 +224,17 @@ strong {
 
 /* footer */
 
-.footer {
-  background: #ebebeb;
+/* .footer {
   padding: 4em 0;
   text-align: center;
-  /* need to replicate:  
-    
-          grid-template-areas:
-    ". social ."
-    ". main .";
-}
-    */
-}
+  padding-top: 2em ;  
+} */
 
-.footer-main,
-.social-list {
-  /*  grid-column: 2 / -2; need to replicate*/
-}
+
 
 .footer-main {
-  /*    grid-area: main;
-*/
+  text-align: center;  
+  padding: 2em 0 ; 
 }
 
 .social-list {
@@ -247,14 +242,13 @@ strong {
   padding: 0;
   margin: 0 2em;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
 }
 
 .social-link {
   color: #000;
-  /* maybe do a gradient for the color  */
-  font-size: 1.7rem;
-  margin: 0 0.5em;
+  font-size: 1.5rem;
+  margin: 0 1em;  
 }
 
 .social-link:hover {
@@ -262,33 +256,43 @@ strong {
 }
 
 @media (min-width: 600px) {
-  .footer {
-    /*     grid-template-areas: ". main main social .";
- */
+  .footer-main {
+    background: #ebebeb ;  
+    padding: 4em 0 ; 
+    text-align: center;
   }
 
-  .footer-main {
-    text-align: left;
-  }
+
 
   .social-list {
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 
-/* HERO AREA */
 
+
+@media (min-width: 400px) { 
+  .footer-main {
+    background: #ebebeb ;  
+    padding: 4em 0 ; 
+    text-align: center;
+  }
+
+}
+
+/* ==============
+      HERO AREA 
+   ==============*/
 .hero {
   background-image: url(/static/hero-bg.jpg);
   background-size: cover;
-  background-position: bottom;
-  padding: 8em 0 4em;
+  background-position: center;
+  padding: 8em 0 4em; 
+  color: #fff ; 
 }
 
 .hero > * {
-  /*   grid-column: 2 / -2;
- */
-  margin-right: 20%;
+  margin-right: 10%;
 }
 
 @media (min-width: 400px) {
@@ -297,26 +301,76 @@ strong {
   }
 }
 
+
+
 @media (min-width: 600px) {
   .hero {
     padding: 10em 0 6em;
+  }  
+
+  .hero > * { 
+    flex-wrap: wrap ; 
+
   }
+} 
+  
+/* INFO SECTION  */
 
-  .hero > * {
-    /* /*   grid-column: 2 / -2;
- */
-  }
-}
-
-/* INFO SECTION
- */
-
-.info {
+ .info {
   padding: 4em 0;
   text-align: center;
+  width: 100%; 
+  flex-direction: row; 
+  display: flex ;  
 }
 
-.col {
-  /*   grid-column: 2 / -2;
- */
+
+@media (min-width: 400px) { 
+  .info { 
+    padding: 6em 2em;
+    text-align: center;
+    width: 100%; 
+    flex-direction: column;  
+    display: flex ;
+  }
 }
+
+@media (min-width: 500px) { 
+  .info { 
+    padding: 6em 0;
+    text-align: center;
+    width: 100%; 
+    flex-direction: column; 
+    display: flex ;  
+  }
+}
+
+
+
+@media (min-width: 600px) { 
+  .info { 
+    padding: 4em 0;
+    text-align: center;
+    width: 100%; 
+    flex-direction: row; 
+    display: flex ;  
+  }
+}
+
+
+  
+.col { 
+  display: flex ; 
+  flex-direction: column; 
+  justify-content: space-between;
+  color: #000 ;   
+  margin: 0 auto ; 
+  display: inline-block ; 
+  padding-bottom: 15px ;
+  width: 50%  ;
+  color: #000 ; 
+}  
+
+/* @media (min-width: 600px) { 
+  .col { 
+} */
