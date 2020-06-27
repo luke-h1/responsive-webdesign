@@ -24,6 +24,12 @@ strong {
   font-weight: 700;
 }
 
+p { 
+  color: #000 ; 
+  font-family: inherit; 
+}
+
+
 .subtitle {
   font-size: 1rem;
   margin-top: 0.5em;
