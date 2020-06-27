@@ -28,6 +28,8 @@ strong {
   font-size: 1rem;
   margin-top: 0.5em;
   margin: 0.7em 0 1.5em;
+  color: #000 ; 
+  font-family: inherit;
 }
 
 .hero-subtitle {
@@ -81,11 +83,12 @@ strong {
 
 /* contact form button */
 .btn-form {
-  background: #ffe600;
-  color: #000;
-  display: block;
-  padding: 0.5em;
-  justify-self: end;
+  padding: 0.5em 1.7em;
+  font-weight: 700;
+  margin-top: 0.5em;
+  text-decoration: none;
+  border: 0 auto ;
+  cursor: pointer; 
 }
 
 .btn-primary:focus,
@@ -100,12 +103,17 @@ strong {
 .main-flex {
   display: flex;
   flex-direction: column;
+  color: #fff;
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
 }
 
 @media (min-width: 600px) {
   .main-flex {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -219,27 +227,16 @@ strong {
 
 /* footer */
 
-.footer {
-  background: #ebebeb;
+/* .footer {
   padding: 4em 0;
   text-align: center;
-  /* need to replicate:  
-    
-          grid-template-areas:
-    ". social ."
-    ". main .";
-}
-    */
-}
-
-.footer-main,
-.social-list {
-  /*  grid-column: 2 / -2; need to replicate*/
-}
+  padding-top: 2em ;  
+} */
 
 .footer-main {
-  /*    grid-area: main;
-*/
+  text-align: center;
+  padding: 2em 0;
+  color: #000 ; 
 }
 
 .social-list {
@@ -252,9 +249,8 @@ strong {
 
 .social-link {
   color: #000;
-  /* maybe do a gradient for the color  */
-  font-size: 1.7rem;
-  margin: 0 0.5em;
+  font-size: 1.5rem;
+  margin: 0 1em;
 }
 
 .social-link:hover {
@@ -262,33 +258,38 @@ strong {
 }
 
 @media (min-width: 600px) {
-  .footer {
-    /*     grid-template-areas: ". main main social .";
- */
-  }
-
   .footer-main {
-    text-align: left;
+    background: #ebebeb;
+    padding: 4em 0;
+    text-align: center;
   }
 
   .social-list {
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 
-/* HERO AREA */
+@media (min-width: 400px) {
+  .footer-main {
+    background: #ebebeb;
+    padding: 4em 0;
+    text-align: center;
+  }
+}
 
+/* ==============
+      HERO AREA 
+   ==============*/
 .hero {
   background-image: url(/static/hero-bg.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   padding: 8em 0 4em;
+  color: #fff;
 }
 
 .hero > * {
-  /*   grid-column: 2 / -2;
- */
-  margin-right: 20%;
+  margin-right: 10%;
 }
 
 @media (min-width: 400px) {
@@ -303,20 +304,174 @@ strong {
   }
 
   .hero > * {
-    /* /*   grid-column: 2 / -2;
- */
+    flex-wrap: wrap;
   }
 }
 
-/* INFO SECTION
- */
+/* INFO SECTION  */
 
 .info {
   padding: 4em 0;
   text-align: center;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+}
+
+@media (min-width: 400px) {
+  .info {
+    padding: 6em 2em;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+@media (min-width: 500px) {
+  .info {
+    padding: 6em 0;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+@media (min-width: 600px) {
+  .info {
+    padding: 4em 0;
+    text-align: center;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+  }
 }
 
 .col {
-  /*   grid-column: 2 / -2;
- */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #000;
+  margin: 0 auto;
+  display: inline-block;
+  padding-bottom: 15px;
+  width: 50%;
+  color: #000;
+}
+
+/* @media (min-width: 600px) { 
+  .col { 
+} */
+
+/* ================
+    BUTTONS 
+   ================ */
+
+.btn {
+  padding: 0.5em 1.55em;
+  font-weight: 700;
+  margin-top: 0.5em;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;  
+  width: 25%  ;  
+  margin-left: 50px ; 
+}
+.btn-primary {
+  background: #ffe600;
+  color: #000;
+  justify-self: start;
+}
+
+
+.btn-primary:focus,
+.btn-primary:hover {
+  background: #ffc400;
+} 
+
+
+
+/* about page */
+
+.main-template > * { 
+  padding: 1em 0  ; 
+
+}
+
+/* ==================
+      FORM 
+
+   ==================*/
+
+.contact-form { 
+  display: flex ;  
+  flex-direction: column; 
+  padding: 0 2em ;   
+  color: #000 ; 
+  width: 100% ;  
+
+}
+
+label { 
+  font-weight: 700; 
+  padding: 0 2em ;  
+}
+
+input,
+textarea { 
+  margin-bottom: 0.8em ; 
+  padding: 0.5em  ;  
+  font-family: inherit;
+}
+
+textarea { 
+  resize: none ; 
+  margin: 0  ; 
+  height: 100px ; 
+}
+
+
+
+.main-image { 
+  background-size: cover ; 
+  background-position: center; 
+  width: 500px  ;  
+}
+
+/* 
+.main-text { 
+  margin: 0 auto ;  
+  padding: 0 2em  ;  
+} */
+
+
+
+@media (min-width: 600px ) { 
+  .main-image { 
+    flex-direction: row; 
+  }
+
+  .main-text { 
+    flex-wrap: wrap ;  
+    align-items: flex-end;
+  }
+
+} 
+
+.main-image { 
+  margin-bottom: 1.5em  ;  
+
+}
+
+.section-title {
+  font-size: 1.125rem;
+  color: #000;
+  margin-top: 1.25em;
+}
+
+
+
+.page-title { 
+  color: #000 ; 
 }
