@@ -40,11 +40,11 @@ p {
 
 .hero-subtitle {
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .hero-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.4;
   margin-bottom: 0;
 }
@@ -73,7 +73,7 @@ p {
 
 /* BUTTONS */
 .btn {
-  padding: 0.5em 1.7em;
+  padding: 0.2em 1.2em;
   font-weight: 700;
   margin-top: 0.5em;
   text-decoration: none;
@@ -89,7 +89,7 @@ p {
 
 /* contact form button */
 .btn-form {
-  padding: 0.5em 1.7em;
+  padding: 0.2em 1.2em;
   font-weight: 700;
   margin-top: 0.5em;
   text-decoration: none;
@@ -124,6 +124,14 @@ p {
 }
 
 /* NAVIGATION */
+
+
+.open-nav { 
+  border: 0 ; 
+  background: black ; 
+  font-size: 25px ; 
+  margin-left: 3rem ; 
+}
 
 .current {
   border-bottom: 1px solid #ffe600;
@@ -508,3 +516,10 @@ textarea {
 }
 
 
+
+
+
+
+.accent-color { 
+  color: #ffe600
+}
