@@ -173,6 +173,7 @@ p {
   left: 100%;
   transform: translateX(0);
   transition: transform 250ms;
+  
 }
 
 .navigation-open {
@@ -189,6 +190,7 @@ p {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+
 }
 
 .nav-link {
@@ -196,6 +198,7 @@ p {
   text-decoration: none;
   font-size: 3rem;
   font-weight: 700;
+  
 }
 
 .nav-link:hover,
